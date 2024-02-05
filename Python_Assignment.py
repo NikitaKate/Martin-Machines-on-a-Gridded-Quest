@@ -14,11 +14,13 @@ class Explorer:
 
     def turn_right(self):
         #Turns the explorer 90 degrees to the right.
+       
         directions = {'N': 'E', 'E': 'S', 'S': 'W', 'W': 'N'}
         self.direction = directions[self.direction]
 
     def move(self):
         #Moves the explorer one unit forward in the current direction.
+       
         if self.direction == 'N':
             self.y += 1
         elif self.direction == 'S':
@@ -30,9 +32,11 @@ class Explorer:
 
 def process_input(input_lines):
     #This function processes the input lines to extract relevant information.
+   
     plateau_size = tuple(map(int, input_lines[0].split()))
 #map():- returns an iterator, typically a map object, which can be converted to a list or
     # another iterable type using list() or tuple().
+    
     explorers_data = input_lines[1:]
 #This line creates a new list explorers_data by slicing input_lines starting from index 1.
 
