@@ -15,6 +15,8 @@ It has methods turn_left, turn_right, and move to simulate turning left, turning
 The first line specifies the plateau's size (upper-right corner coordinates).
 Each subsequent pair of lines represents an explorer:
 
+
+
 First line: Initial position (x, y, direction)
 Second line: Sequence of "L", "R", and "M" commands.
               A string of L, R, and M commands:
@@ -37,3 +39,4 @@ The program outputs the final position and direction of each explorer:
 
 # Dependencies:
                 The program requires Python 3.
+# IDE:  Pycharm 
